@@ -1,0 +1,9 @@
+# Ignore Node and Python environments
+node_modules/
+venv/
+venv_app/
+__pycache__/
+
+# Ignore Environment variables and Mac files
+.env
+.DS_Store
