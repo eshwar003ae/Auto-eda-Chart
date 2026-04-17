@@ -32,7 +32,7 @@ export default function Upload() {
     formData.append("prompt", prompt);
 
     try {
-      const res = await axios.post('http://localhost:8000/api/analyze', formData);
+      const res = await axios.post('https://auto-eda-backend.onrender.com/api/analyze', formData);
       
       // Save the generated charts to Context
       setAnalysisResult(res.data);

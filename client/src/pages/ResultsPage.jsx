@@ -35,7 +35,7 @@ export default function ResultsPage() {
     formData.append("prompt", newPrompt);
 
     try {
-      const res = await axios.post("http://localhost:8000/api/analyze", formData);
+      const res = await axios.post("https://auto-eda-backend.onrender.com/api/analyze", formData);
       setAnalysisResult(res.data); // This instantly updates the UI with the new chart!
       setNewPrompt(""); // Clear the input bar
     } catch (err) {
